@@ -1,0 +1,3 @@
+[submodule "bootstrap"]
+	path = bootstrap
+	url = git@github.com:mtthlm/bash-bootstrap.git
