@@ -7,9 +7,9 @@ set -o errexit -o errtrace -o nounset -o pipefail
 readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 readonly BASE_IMAGE_NAME='localhost/fedora-toolbox' \
-         BASE_IMAGE_VERSION='35-custom'
+         BASE_IMAGE_VERSION='38-custom'
 readonly BUILD_IMAGE_NAME='localhost/fedora-toolbox' \
-         BUILD_IMAGE_VERSION='35-idea'
+         BUILD_IMAGE_VERSION='38-idea'
 
 readonly INTELLIJ_DOWNLOAD_URL='https://download.jetbrains.com/product?code=IU&distribution=linux&latest'
 readonly INTELLIJ_EXTRACT_DIR='/opt/idea'
