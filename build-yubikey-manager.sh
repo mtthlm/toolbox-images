@@ -6,10 +6,10 @@ set -o errexit -o errtrace -o nounset -o pipefail
 # shellcheck disable=SC2155
 readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-readonly BASE_IMAGE_NAME='localhost/fedora-toolbox' \
-         BASE_IMAGE_VERSION='38-custom'
-readonly BUILD_IMAGE_NAME='localhost/fedora-toolbox' \
-         BUILD_IMAGE_VERSION='38-yubikey-manager'
+readonly BASE_IMAGE_NAME='localhost/fedora-toolbox-38' \
+         BASE_IMAGE_VERSION='latest'
+readonly BUILD_IMAGE_NAME='localhost/fedora-toolbox-38-yubikey-manager' \
+         BUILD_IMAGE_VERSION='latest'
 
 readonly -a PACKAGES=(
   yubikey-manager

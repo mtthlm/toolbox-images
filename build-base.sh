@@ -8,8 +8,8 @@ readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 readonly BASE_IMAGE_NAME='registry.fedoraproject.org/fedora-toolbox' \
          BASE_IMAGE_VERSION='38'
-readonly BUILD_IMAGE_NAME='localhost/fedora-toolbox' \
-         BUILD_IMAGE_VERSION='38-custom'
+readonly BUILD_IMAGE_NAME='localhost/fedora-toolbox-38' \
+         BUILD_IMAGE_VERSION='latest'
 
 readonly -a PACKAGES=()
 

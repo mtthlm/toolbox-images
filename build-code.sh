@@ -6,10 +6,10 @@ set -o errexit -o errtrace -o nounset -o pipefail
 # shellcheck disable=SC2155
 readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-readonly BASE_IMAGE_NAME='localhost/fedora-toolbox' \
-         BASE_IMAGE_VERSION='38-custom'
-readonly BUILD_IMAGE_NAME='localhost/fedora-toolbox' \
-         BUILD_IMAGE_VERSION='38-code'
+readonly BASE_IMAGE_NAME='localhost/fedora-toolbox-38' \
+         BASE_IMAGE_VERSION='latest'
+readonly BUILD_IMAGE_NAME='localhost/fedora-toolbox-38-code' \
+         BUILD_IMAGE_VERSION='latest'
 
 readonly VSCODE_REPO='https://packages.microsoft.com/yumrepos/vscode' \
          VSCODE_REPO_KEY='https://packages.microsoft.com/keys/microsoft.asc'
